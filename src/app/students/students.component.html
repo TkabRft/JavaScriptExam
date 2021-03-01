@@ -1,0 +1,20 @@
+
+<app-addform-student (addStudent)="onAddStudent($event)"></app-addform-student>
+<!-- если вы это видите, значит я не успел доделать реализацию сортировки
+    <div class="container-fluid">
+    <h5 class="mt-4">Фильтрация</h5>
+        <div class="row mb-3 " >
+          <div class="col-3">
+            <input type="text" class="form-control" placeholder="Группа" formControlName="group"> 
+          </div>
+          <div class="col-3">
+            <input type="text" class="form-control" placeholder="Направление" formControlName="course">
+          </div>
+        </div>
+    </div>
+    <hr>
+</div> -->
+<app-table-students 
+(editStudent)="onEditStudent($event)"
+(deleteStudent)="onDeleteStudent($event)"
+></app-table-students>

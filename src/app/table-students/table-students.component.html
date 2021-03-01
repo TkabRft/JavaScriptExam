@@ -1,0 +1,30 @@
+<div class="container-fluid">
+  <div class="row" >
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col" [style.width]="'12%'">Фамилия</th>
+              <th scope="col"[style.width]="'12%'">Имя</th>
+              <th scope="col"[style.width]="'12%'">Отчество</th>
+              <th scope="col"[style.width]="'12%'">Телефон</th>
+              <th scope="col"[style.width]="'12%'">E-mail</th>
+              <th scope="col"[style.width]="'12%'">Дата рождения</th>
+              <th scope="col"[style.width]="'12%'">Группа</th>
+              <th scope="col"[style.width]="'12%'">Направление</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let students of students">
+              <td align="center">{{students.surname}}</td>
+              <td align="center">{{students.name}}</td>
+              <td align="center">{{students.patronymic}}</td>
+              <td align="center">{{students.phone}}</td>
+              <td align="center">{{students.email}}</td>
+              <td align="center">{{students.birth}}</td>
+              <td align="center">{{students.group}}</td>
+              <td align="center">{{students.course}}</td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+  </div>
